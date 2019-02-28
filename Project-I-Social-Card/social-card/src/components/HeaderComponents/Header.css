@@ -1,6 +1,8 @@
 /* All styles for your header Components live here */
 .header-container {
+    border: 2px solid lightcoral;
     display: flex;
+    margin: 0.5%;
 }
 
 h2 {
