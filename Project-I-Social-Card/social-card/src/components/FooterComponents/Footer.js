@@ -22,8 +22,8 @@ function Footer() {
       }>
         <footer className="footer">
           <div className="footer-icon-bubble"> <MdChatBubbleOutline /> </div>
-          <div className="footer-icon"> <MdSync /> </div>
-          <div className="footer-icon"> <MdFavoriteBorder /> </div>
+          <div className="footer-icon"> <MdSync /> <span className="icon-count">6</span> </div>
+          <div className="footer-icon"> <MdFavoriteBorder /> <span className="icon-count">4</span> </div>
           <div className="footer-icon"> <MdMailOutline /> </div>
         </footer>
       </IconContext.Provider>

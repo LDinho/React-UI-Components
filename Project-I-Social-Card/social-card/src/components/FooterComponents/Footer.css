@@ -12,4 +12,13 @@
 
 .footer-icon {
     margin-left: 10%;
+    position: relative;
+}
+
+.icon-count {
+    color: #9c9c9c;
+    font-weight: bold;
+    position: absolute;
+    left: 32px;
+    bottom: 22%;
 }
