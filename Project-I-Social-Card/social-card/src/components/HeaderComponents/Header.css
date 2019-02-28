@@ -1,1 +1,28 @@
 /* All styles for your header Components live here */
+.header-container {
+    display: flex;
+}
+
+h2 {
+    margin: 0px auto 0px 4px;
+    font-size: 16px;
+}
+
+.grayed-out {
+    margin-left: 6px;
+    color: #9c9c9c;
+    font-weight: lighter;
+}
+
+p {
+
+    margin: 8px auto 2px 4px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.img-wrapper {
+    width: 130px;
+}
