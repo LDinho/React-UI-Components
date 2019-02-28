@@ -12,11 +12,7 @@ function CardContent() {
         each state in your application.
       </p>
 
-        <a className="decoration text-color-light" href="https://www.reactjs.org"
-            target="#">
-          <p className="card-content">reactjs.org</p>
-        </a>
-
+      <p className="text-color-light">reactjs.org</p>
     </>
   )
 }

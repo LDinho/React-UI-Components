@@ -1,10 +1,15 @@
 .footer {
+    display: flex;
+    align-items: center;
     border: 2px solid #ffc800;
     height: 70px;
     margin: 0.5%;
 }
 
-.footer p {
-    text-align: center;
+.footer-icon-bubble {
+    margin-left: 8%;
+}
 
+.footer-icon {
+    margin-left: 10%;
 }
