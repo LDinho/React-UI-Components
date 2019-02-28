@@ -6,7 +6,7 @@ function HeaderTitle() {
     <>
       <h2>
         Lambda School
-        <span className="grayed-out">@LambdaSchool 26 jan</span>
+        <span className="grayed-out">@LambdaSchool • 26 jan</span>
       </h2>
     </>
   )
