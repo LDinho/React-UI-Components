@@ -1,11 +1,13 @@
 import React from 'react';
 import './Button.css';
 
-function ActionButton() {
-  return (
-    <div className="action-button">
+function ActionButton(props) {
+  const { button } = props;
 
-    </div>
+  return (
+    <button className="number-button btn-width" >
+      {button.value}
+    </button>
   )
 }
 

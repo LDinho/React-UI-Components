@@ -3,11 +3,13 @@ import './CalculatorContainer.css';
 
 import CalculatorDisplay from '../DisplayComponents/CalculatorDisplay';
 import NumberButton from '../ButtonComponents/NumberButton';
+import ActionButton from '../ButtonComponents/ActionButton'
 
-const data = [
+const buttons = [
   {
     id: 1,
     type: 'action',
+    buttonType: 'action',
     value: 'clear',
   },
   {
@@ -78,6 +80,7 @@ const data = [
   {
     id: 15,
     type: 'number',
+    buttonType: 'action',
     value: '0',
   },
   {
@@ -92,9 +95,12 @@ function CalculatorContainer() {
       <div className="calc-wrapper">
         <CalculatorDisplay />
 
-        {data.map((button) => (
-          <NumberButton button={button} key={button.id} />
-        ))}
+        {buttons.map((button) => {
+          return button.buttonType === 'action' ?
+            <ActionButton button={button} key={button.id} />
+            :
+            <NumberButton button={button} key={button.id} />
+        })}
 
       </div>
   )

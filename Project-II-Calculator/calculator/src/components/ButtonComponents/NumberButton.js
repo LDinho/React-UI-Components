@@ -4,15 +4,14 @@ import './Button.css';
 function NumberButton(props) {
   const { button } = props;
 
-  let buttonStyleWidth = button.value === 'clear' || button.value === '0'
-    ? 'number-button btn-width' : 'number-button';
+  const buttonStyleWidth = 'number-button';
 
-  let buttonStyleColor = button.type === 'operator'
+  const buttonStyleColor = button.type === 'operator'
     ? 'number-button btn-color' : buttonStyleWidth;
 
   return (
     <button className={buttonStyleWidth && buttonStyleColor} >
-      {button.value }
+      {button.value}
     </button>
   )
 }
