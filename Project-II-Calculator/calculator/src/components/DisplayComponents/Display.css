@@ -3,7 +3,7 @@
     background-color: black;
     display: flex;
     /*flex-direction: column;*/
-    justify-content: flex-end;
+    /*justify-content: flex-end;*/
     /*align-items: flex-end;*/
     padding: 2%;
 }
@@ -11,7 +11,7 @@
 .screen input {
     color: white;
     font-size: 50px;
-    width: 45%;
+    width: 100%;
     background-color: black;
     border-style: none;
     direction: rtl;
