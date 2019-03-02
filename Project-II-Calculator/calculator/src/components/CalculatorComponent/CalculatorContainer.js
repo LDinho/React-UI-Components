@@ -9,13 +9,10 @@ const data = [
     id: 1,
     type: 'action',
     value: 'clear',
-    style: {
-      width: '75%',
-    }
   },
   {
     id: 2,
-    type: 'action',
+    type: 'operator',
     value: '\u00F7',
   },
   {
@@ -25,57 +22,57 @@ const data = [
   },
   {
     id: 4,
-    type: 'action',
+    type: 'number',
     value: '8',
   },
   {
     id: 5,
-    type: 'action',
+    type: 'number',
     value: '9',
   },
   {
     id: 6,
-    type: 'action',
+    type: 'operator',
     value: '\u00D7',
   },
   {
     id: 7,
-    type: 'action',
+    type: 'number',
     value: '4',
   },
   {
     id: 8,
-    type: 'action',
+    type: 'number',
     value: '5',
   },
   {
     id: 9,
-    type: 'action',
+    type: 'number',
     value: '6',
   },
   {
     id: 10,
-    type: 'action',
+    type: 'operator',
     value: '\u2212',
   },
   {
     id: 11,
-    type: 'action',
+    type: 'number',
     value: '1',
   },
   {
     id: 12,
-    type: 'action',
+    type: 'number',
     value: '2',
   },
   {
     id: 13,
-    type: 'action',
+    type: 'number',
     value: '3',
   },
   {
     id: 14,
-    type: 'action',
+    type: 'operator',
     value: '+',
   },
   {
@@ -85,7 +82,7 @@ const data = [
   },
   {
     id: 16,
-    type: 'action',
+    type: 'operator',
     value: '=',
   },
 ]
