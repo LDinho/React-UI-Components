@@ -1,0 +1,15 @@
+.action-button {
+    border: 1px solid gray;
+    font-size: 18px;
+    width: 25%;
+    background-color: maroon;
+}
+
+.number-button {
+    color: black;
+    border: 1px solid gray;
+    font-size: 50px;
+    height: 106px;
+    width: 25%;
+    background-color: white;
+}
