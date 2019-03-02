@@ -1,9 +1,8 @@
-.action-button {
-    border: 1px solid gray;
-    font-size: 18px;
-    width: 25%;
-    background-color: maroon;
-}
+/*.action-button {*/
+    /*border: 1px solid gray;*/
+    /*font-size: 18px;*/
+    /*background-color: maroon;*/
+/*}*/
 
 .number-button {
     color: black;
@@ -16,4 +15,9 @@
 
 .btn-width {
     width: 75%;
+}
+
+.btn-color {
+    color: white;
+    background-color: maroon;
 }
