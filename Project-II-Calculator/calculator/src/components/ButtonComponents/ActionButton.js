@@ -2,10 +2,10 @@ import React from 'react';
 import './Button.css';
 
 function ActionButton(props) {
-  const { button } = props;
+  const { button, buttonStyle } = props;
 
   return (
-    <button className="number-button btn-width" >
+    <button className={buttonStyle} >
       {button.value}
     </button>
   )

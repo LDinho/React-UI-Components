@@ -1,94 +1,11 @@
 import React from 'react';
 import './CalculatorContainer.css';
 
+import buttons from '../../data/buttons_data';
 import CalculatorDisplay from '../DisplayComponents/CalculatorDisplay';
 import NumberButton from '../ButtonComponents/NumberButton';
-import ActionButton from '../ButtonComponents/ActionButton'
-
-const buttons = [
-  {
-    id: 1,
-    type: 'action',
-    buttonType: 'action',
-    value: 'clear',
-  },
-  {
-    id: 2,
-    type: 'operator',
-    value: '\u00F7',
-  },
-  {
-    id: 3,
-    type: 'number',
-    value: '7',
-  },
-  {
-    id: 4,
-    type: 'number',
-    value: '8',
-  },
-  {
-    id: 5,
-    type: 'number',
-    value: '9',
-  },
-  {
-    id: 6,
-    type: 'operator',
-    value: '\u00D7',
-  },
-  {
-    id: 7,
-    type: 'number',
-    value: '4',
-  },
-  {
-    id: 8,
-    type: 'number',
-    value: '5',
-  },
-  {
-    id: 9,
-    type: 'number',
-    value: '6',
-  },
-  {
-    id: 10,
-    type: 'operator',
-    value: '\u2212',
-  },
-  {
-    id: 11,
-    type: 'number',
-    value: '1',
-  },
-  {
-    id: 12,
-    type: 'number',
-    value: '2',
-  },
-  {
-    id: 13,
-    type: 'number',
-    value: '3',
-  },
-  {
-    id: 14,
-    type: 'operator',
-    value: '+',
-  },
-  {
-    id: 15,
-    type: 'number',
-    buttonType: 'action',
-    value: '0',
-  },
-  {
-    id: 16,
-    type: 'operator',
-    value: '=',
-  },
-]
+import ActionButton from '../ButtonComponents/ActionButton';
+import OperatorButton from '../ButtonComponents/OperatorButton';
 
 function CalculatorContainer() {
   return (
@@ -96,12 +13,45 @@ function CalculatorContainer() {
         <CalculatorDisplay />
 
         {buttons.map((button) => {
-          return button.buttonType === 'action' ?
-            <ActionButton button={button} key={button.id} />
-            :
-            <NumberButton button={button} key={button.id} />
-        })}
+          const buttonMap = {
+            action: <ActionButton button={button} key={button.id} buttonStyle="number-button btn-width"/>,
+            operator: <OperatorButton button={button} key={button.id} buttonStyle="number-button btn-color" />,
+            number: <NumberButton button={button} key={button.id} buttonStyle="number-button" />
+          }
 
+          return buttonMap[button.type] || <NumberButton button={button} key={button.id} />;
+
+          /*
+          Alternate ways of using the switch statement:
+
+          A)
+
+          let buttonComponent;
+
+          switch (button.type) {
+            case 'action':
+              buttonComponent = <ActionButton button={button} key={button.id} />
+              break;
+            case 'operator':
+              buttonComponent = <OperatorButton button={button} key={button.id} />
+              break;
+            default:
+              buttonComponent = <NumberButton button={button} key={button.id} />
+          }
+          return buttonComponent;
+
+          B)
+
+          switch (button.type) {
+            case 'action':
+              return <ActionButton button={button} key={button.id} />
+            case 'operator':
+              return <OperatorButton button={button} key={button.id} />
+            default:
+              return <NumberButton button={button} key={button.id} />
+          }
+           */
+        })}
       </div>
   )
 }
