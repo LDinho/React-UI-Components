@@ -1,10 +1,14 @@
 import React from 'react';
 import './Button.css';
 
-function NumberButton() {
+function NumberButton(props) {
+  const { button } = props;
+  const buttonStyle = button.value === 'clear' || button.value === '0'
+    ? 'number-button btn-width' : 'number-button';
+
   return (
-    <button className="number-button">
-          2
+    <button className={buttonStyle} >
+      {button.value }
     </button>
   )
 }

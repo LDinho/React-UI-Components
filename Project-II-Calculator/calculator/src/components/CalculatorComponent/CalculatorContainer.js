@@ -9,11 +9,14 @@ const data = [
     id: 1,
     type: 'action',
     value: 'clear',
+    style: {
+      width: '75%',
+    }
   },
   {
     id: 2,
     type: 'action',
-    value: 'divide',
+    value: '\u00F7',
   },
   {
     id: 3,
@@ -33,7 +36,7 @@ const data = [
   {
     id: 6,
     type: 'action',
-    value: 'multiply',
+    value: '\u00D7',
   },
   {
     id: 7,
@@ -53,7 +56,7 @@ const data = [
   {
     id: 10,
     type: 'action',
-    value: 'subtract',
+    value: '\u2212',
   },
   {
     id: 11,
@@ -73,7 +76,7 @@ const data = [
   {
     id: 14,
     type: 'action',
-    value: 'add',
+    value: '+',
   },
   {
     id: 15,
@@ -83,7 +86,7 @@ const data = [
   {
     id: 16,
     type: 'action',
-    value: 'equal',
+    value: '=',
   },
 ]
 
