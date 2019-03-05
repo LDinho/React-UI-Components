@@ -1,0 +1,17 @@
+.number-button {
+    color: black;
+    border: 1px solid gray;
+    font-size: 50px;
+    height: 106px;
+    width: 25%;
+    background-color: white;
+}
+
+.btn-width {
+    width: 75%;
+}
+
+.btn-color {
+    color: white;
+    background-color: maroon;
+}

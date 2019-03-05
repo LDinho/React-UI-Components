@@ -1,7 +1,7 @@
 import React from 'react';
 import './Button.css';
 
-function NumberButton(props) {
+function OperatorButton(props) {
   const { button, buttonStyle } = props;
 
   return (
@@ -11,4 +11,4 @@ function NumberButton(props) {
   )
 }
 
-export default NumberButton;
+export default OperatorButton;
